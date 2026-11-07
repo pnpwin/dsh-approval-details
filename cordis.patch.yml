@@ -1,0 +1,4 @@
+- insert:
+    - id: pnpwin-approval-details
+      name: '@pnpwin/dsh-approval-details'
+      config: {}

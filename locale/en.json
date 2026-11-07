@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Tool approval details",
+    "description": "Shows the tool name and exact bash or terminal command before you allow or reject a call, including nested calls."
+  }
+}

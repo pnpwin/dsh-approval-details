@@ -1,0 +1,44 @@
+[
+  {
+    "language": "en",
+    "tool": "bash",
+    "title": "Confirm tool: bash",
+    "reason": "Auto review denied this call.",
+    "command": "printf \"hello\"\n  pwd"
+  },
+  {
+    "language": "en",
+    "tool": "terminal_send",
+    "title": "Confirm tool: terminal_send",
+    "reason": "Auto review denied this call.",
+    "command": "git status --short"
+  },
+  {
+    "language": "en",
+    "tool": "write",
+    "title": "Confirm tool: write",
+    "reason": "Auto review denied this call.",
+    "command": null
+  },
+  {
+    "language": "ru",
+    "tool": "bash",
+    "title": "Подтвердите инструмент: bash",
+    "reason": "Auto review отклонила этот вызов.",
+    "command": "printf \"hello\"\n  pwd"
+  },
+  {
+    "language": "ru",
+    "tool": "terminal_send",
+    "title": "Подтвердите инструмент: terminal_send",
+    "reason": "Auto review отклонила этот вызов.",
+    "command": "git status --short"
+  },
+  {
+    "language": "ru",
+    "tool": "write",
+    "title": "Подтвердите инструмент: write",
+    "reason": "Auto review отклонила этот вызов.",
+    "command": null
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "name": "@pnpwin/dsh-approval-details",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "pnpwin",
+  "repository": { "type": "git", "url": "git+https://github.com/pnpwin/dsh-approval-details.git" },
+  "homepage": "https://github.com/pnpwin/dsh-approval-details#readme",
+  "bugs": { "url": "https://github.com/pnpwin/dsh-approval-details/issues" },
+  "type": "module",
+  "description": "Show the tool name and exact shell or terminal command before approval.",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./src/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./src/assets/icon.svg"
+  },
+  "files": ["src/", "cordis.patch.yml", "locale/*.json", "README.md", "LICENSE", "UPSTREAM.md"],
+  "scripts": {
+    "build": "node src/build.js",
+    "test": "node --test tests/*.test.js",
+    "check": "pnpm run build && pnpm test"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": { "react": "18.3.1" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-approval", "@deepseek-ai/dsh-client-ui-chat"]
+    }
+  }
+}
